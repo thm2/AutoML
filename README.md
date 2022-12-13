@@ -5,8 +5,8 @@ the resulting trained model. Thus, an effective performance predictor can be use
 
 This project develops a supervised machine learning solution that takes a model architecture and hyperparameters and predicts the training and testing performance. The approach is to first preprocess the data (make categorical numeric, normalize, remove unneeded features etc). The file train.csv is split using a train/validation split to train four regressors: XGBoost, a Random Forest, and two neural networks. Afterwards the regressors are refit using all of train.csv as training data. Final predictions is an ensemble of each algorithm's predictions on test.csv.
 
-[1] Neural Architecture Optimization, https://arxiv.org/abs/1808.07233
-[2] Progressive Neural Architecture Search, https://arxiv.org/abs/1712.00559
+[1] Neural Architecture Optimization, https://arxiv.org/abs/1808.07233 \\
+[2] Progressive Neural Architecture Search, https://arxiv.org/abs/1712.00559 \\
 [3] Accelerating Neural Architecture Search using Performance Prediction, https://arxiv.org/abs/1705.10823
 [4] A Surprising Linear Relationship Predicts Test Performance in Deep Networks, https://arxiv.org/abs/1807.09659
 [5] Predicting the Generalization Gap in Deep Networks with Margin Distributions, https://arxiv.org/abs/1810.00113
